@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'feature-admin/admin_feature.dart';
 import 'feature-teacher/teacher_feature.dart';
 import 'feature-student/student_feature.dart';
@@ -14,10 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'QR Code Management',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        useMaterial3: true,
-      ),
+      theme: FlexThemeData.light(scheme: FlexScheme.green, useMaterial3: true),
       home: const RoleSelectionScreen(),
     );
   }
