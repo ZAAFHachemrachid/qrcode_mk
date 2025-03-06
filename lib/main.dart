@@ -75,7 +75,7 @@ class RoleSelectionScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
         minimumSize: const Size(200, 50),
       ),
-    );
+    );     
   }
 
   void _navigateToFeature(BuildContext context, String role) {
